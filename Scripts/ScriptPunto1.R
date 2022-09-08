@@ -1,6 +1,7 @@
 ###############################################
 #            Problem set 1                    #
-#               Punto1                        #
+#                                             #
+#                                             #
 # Colaboradores:                              #
 # Daniel Raquira 201914059                    #
 # Santiago Becerra 201911587                  #
