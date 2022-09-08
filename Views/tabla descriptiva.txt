@@ -1,0 +1,8 @@
+  directorio,    ingtot,     sex,     age,    clase,   college, cuentaPropia,    depto,    formal, maxEducLevel,    oficio,    relab,totalHoursWorked
+Min.   :   1  ,Min.   :       0  ,Min.   :1.00  ,Min.   :18.00  ,Min.   :1  ,Min.   :1.000  ,Min.   :1.000  ,Min.   :1  ,Min.   :1.000  ,Min.   :1.000  ,Min.   : 1.00  ,Min.   :1.000  ,Min.   :  1.0  
+1st Qu.:2338  ,1st Qu.:  800000  ,1st Qu.:1.00  ,1st Qu.:28.00  ,1st Qu.:1  ,1st Qu.:1.000  ,1st Qu.:1.000  ,1st Qu.:1  ,1st Qu.:1.000  ,1st Qu.:4.000  ,1st Qu.:24.00  ,1st Qu.:1.000  ,1st Qu.: 40.0  
+Median :4636  ,Median : 1051160  ,Median :2.00  ,Median :38.00  ,Median :1  ,Median :1.000  ,Median :1.000  ,Median :1  ,Median :2.000  ,Median :5.000  ,Median :36.00  ,Median :1.000  ,Median : 48.0  
+Mean   :4624  ,Mean   : 1769379  ,Mean   :1.53  ,Mean   :39.44  ,Mean   :1  ,Mean   :1.319  ,Mean   :1.309  ,Mean   :1  ,Mean   :1.587  ,Mean   :4.954  ,Mean   :39.45  ,Mean   :2.268  ,Mean   : 47.4  
+3rd Qu.:6933  ,3rd Qu.: 1723158  ,3rd Qu.:2.00  ,3rd Qu.:50.00  ,3rd Qu.:1  ,3rd Qu.:2.000  ,3rd Qu.:2.000  ,3rd Qu.:1  ,3rd Qu.:2.000  ,3rd Qu.:6.000  ,3rd Qu.:52.00  ,3rd Qu.:4.000  ,3rd Qu.: 50.0  
+Max.   :9214  ,Max.   :85833333  ,Max.   :2.00  ,Max.   :94.00  ,Max.   :1  ,Max.   :2.000  ,Max.   :2.000  ,Max.   :1  ,Max.   :2.000  ,Max.   :6.000  ,Max.   :80.00  ,Max.   :9.000  ,Max.   :130.0  
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA's   :1  ,NA,NA,NA
