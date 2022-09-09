@@ -44,7 +44,7 @@ b2<-coeficientes[3]
 Peak=(-b1)/(2*b2) ##Derivada para encontrar la edad que maximiza
 Peak 
 
-##Intervalos de confianza luego del boot
+#Hallamos elasticidad ingreso-edad
 media_age<-mean(geih_limpia2$age) 
 e_ingreso_edad<-b1+2*b2*media_age 
 e_ingreso_edad 
