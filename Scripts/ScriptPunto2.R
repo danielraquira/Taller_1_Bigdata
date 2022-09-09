@@ -64,7 +64,7 @@ require(boot)
 resultados <- boot(data=geih_limpia2, e_mod_age_earning.fn,R=4000)
 resultados
 
-boot.ci(boot.out = resultados, conf = 0.95, type = "all", index = 1:min(2,length(resultados$t0)))
+boot.ci(boot.out = resultados, conf = 0.95, type = "norm", index = 1:min(2,length(resultados$t0)))
 
 desviación_estandar <- 1449.747*1.96
 IDC1_lowerbound<-e_ingreso_edad - desviación_estandar

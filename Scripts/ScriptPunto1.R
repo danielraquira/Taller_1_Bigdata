@@ -13,6 +13,7 @@
 rm(list=ls())
 require(pacman)
 p_load(tidyverse, rvest)
+p_load(ggplot2)
 
 url<-0
 tablaurl<-0
@@ -96,7 +97,6 @@ print(resumen)
 setwd(dir = "C:/Users/Santiago Becerra/Desktop/Santiago/Andes/Materias y Trabajos/Octavo Semestre/Big Data/Problem set 1/Taller_1_Bigdata/Views")
 write.table(resumen, file = "tabla descriptiva.txt", sep = ",", quote = FALSE, row.names = F)
 
-p_load(ggplot2)
 
 #gráfica de dispersión para variables ingreso total según sexo, clase, edad, masxEducLevel y totalHoursWorked
 ggplot(data = geih_limpia2,aes(age,ingtot)) + geom_point()
