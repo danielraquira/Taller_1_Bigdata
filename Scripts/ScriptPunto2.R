@@ -41,7 +41,7 @@ coeficientes
 b1<-coeficientes[2]
 b2<-coeficientes[3]
 
-Peak=(-b1)/(2*b2) ##Derivada para maximizar
+Peak=(-b1)/(2*b2) ##Derivada para encontrar la edad que maximiza
 Peak 
 
 ##Intervalos de confianza luego del boot
@@ -49,20 +49,22 @@ media_age<-mean(geih_limpia2$age)
 e_ingreso_edad<-b1+2*b2*media_age 
 e_ingreso_edad 
 
-e_mod_age_earning.fn<-function(data,directorio,
+e_mod_age_earning.fn<-function(data,index,
                             mean_age=mean(geih_limpia2$age), 
                             mean_age2=mean(geih_limpia2$age2)){
-  mod2_age_earning<-lm(ingtot~age+age2, geih_limpia2, subset = directorio)
+  mod2_age_earning<-lm(ingtot~age+age2, geih_limpia2, subset = index)
   coeficientes<-mod2_age_earning$coefficients
   B1<-coeficientes[2]
   B2<-coeficientes[3]
   elasticidad <- B1+2*B2*mean_age
+  return(elasticidad)
 }
 
 require(boot)
-resultados <- boot(data=geih_limpia2, e_mod_age_earning.fn,R=1000)
+resultados <- boot(data=geih_limpia2, e_mod_age_earning.fn,R=4000)
 resultados
-elasticidad
+
+boot.ci(boot.out = resultados, conf = 0.95, type = "all", index = 1:min(2,length(resultados$t0)))
 
 desviación_estandar <- 1449.747*1.96
 IDC1_lowerbound<-e_ingreso_edad - desviación_estandar
